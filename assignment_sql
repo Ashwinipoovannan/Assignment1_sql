@@ -1,0 +1,17 @@
+CREATE DATABASE MarketDB;
+USE MarketDB;
+
+CREATE TABLE Products (
+    Product_ID INT PRIMARY KEY,
+    Store_Name VARCHAR(100) NOT NULL,
+    Item_Name VARCHAR(100) NOT NULL,
+    Cost DECIMAL(10,2) DEFAULT 10.00
+);
+
+INSERT INTO Products VALUES
+(201, 'Fresh Mart', 'Apples', 120.00),
+(202, 'Green Basket', 'Tomatoes', 40.00),
+(203, 'Daily Needs', 'Soap', 35.00),
+(204, 'City Bazaar', 'Shampoo', 90.00);
+
+SELECT * FROM Products;
